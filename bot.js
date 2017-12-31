@@ -12,6 +12,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === 'newbieguide') {
+    	message.channel.send('Here is our Ankou Dungeon Guide: https://puu.sh/yRswX/7ab72087f2.png');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === 'bing') {
     	message.reply('BONG!');
   	}
