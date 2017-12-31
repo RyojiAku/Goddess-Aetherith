@@ -14,13 +14,13 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!newbieguide') {
-    	message.reply('Follow this path: https://puu.sh/yRswX/7ab72087f2.png');
+    	message.reply('Follow this path: https://puu.sh/yRHnV/48c7ded27a.png');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'bing') {
-    	message.reply('BONG!');
+    if (message.content === '!help') {
+    	message.reply('Guides: !newbieguide, !ankouguide, !kheldorguide, !kalgasguide, !snowyguide, !skyguide, !deathwingguide, !gardenguide, !ragefireguide, !startholmeguide');
   	}
 });
 
