@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
+    if (message.content === 'ankouguide') {
+    	message.channel.send('https://puu.sh/yRswX/7ab72087f2.png');
   	}
 });
 
