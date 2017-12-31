@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ankouguide') {
-    	message.channel.send('https://puu.sh/yRswX/7ab72087f2.png');
+    	message.channel.send('Here is our Ankou Dungeon Guide: https://puu.sh/yRswX/7ab72087f2.png');
   	}
 });
 
