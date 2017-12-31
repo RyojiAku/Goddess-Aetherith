@@ -20,7 +20,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!help') {
-    	message.reply('Guides: !newbieguide, !ankouguide, !kheldorguide, !kalgasguide, !snowyguide, !skyguide, !deathwingguide, !gardenguide, !ragefireguide, !startholmeguide');
+    	message.reply('Only one guide available: !newbieguide');
   	}
 });
 
