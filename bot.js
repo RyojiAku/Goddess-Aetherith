@@ -6,14 +6,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ankouguide') {
-    	message.channel.send('Here is our Ankou Dungeon Guide: https://puu.sh/yRswX/7ab72087f2.png');
+    if (message.content === 'Hi Goddess') {
+    	message.channel.send('Hello my Child.');
   	}
 });
 
 client.on('message', message => {
     if (message.content === 'newbieguide') {
-    	message.channel.send('Here is our Ankou Dungeon Guide: https://puu.sh/yRswX/7ab72087f2.png');
+    	message.reply('Here is our Ankou Dungeon Guide: https://puu.sh/yRswX/7ab72087f2.png');
   	}
 });
 
