@@ -13,7 +13,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!newbieguide') {
-    	message.reply('Here is our Ankou Dungeon Guide: https://puu.sh/yRswX/7ab72087f2.png');
+    	message.reply('Follow this path: https://puu.sh/yRswX/7ab72087f2.png');
   	}
 });
 
