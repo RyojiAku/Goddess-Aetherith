@@ -5,9 +5,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.user.setStatus('Hello');
-  	}
-});
+bot.user.setPresence({ game: { name: 'Hello', type: 0 } });
 
 client.on('message', message => {
     if (message.content === 'Hi Goddess') {
