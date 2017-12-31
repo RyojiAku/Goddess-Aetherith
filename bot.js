@@ -5,6 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+client.user.setStatus('Hello');
+  	}
+});
+
 client.on('message', message => {
     if (message.content === 'Hi Goddess') {
     	message.channel.send('Hello my Child.');
