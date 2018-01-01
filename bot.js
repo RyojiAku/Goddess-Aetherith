@@ -1,11 +1,11 @@
 var Discord = require('discord.js');
-var bot = new Discord.Client()
+var client = new Discord.Client()
 
-bot.on('ready', function() {
+client.on('ready', function() {
     console.log(bot.user.username);
 });
 
-bot.on('message', function() {
+client.on('message', function() {
     if (message.content === "$loop") { 
       var interval = setInterval (function () {
         bot.sendMessage(message.channel, "123")
