@@ -6,6 +6,13 @@ client.on('ready', () => {
     client.user.setPresence({ game: { name: 'Type !help', type: 0 } });
 });
 
+bot.on('message', function() {
+    if (message.content === "$loop") { 
+      var interval = setInterval (function () {
+        bot.sendMessage(message.channel, "Don't forget to vote for Clockworks Flyff! https://clockworksflyff.com/")
+      }, 1 * 1000); 
+    }
+
 client.on('message', message => {
     if (message.content === 'Hi Goddess') {
     	message.channel.send('Hello my Child.');
