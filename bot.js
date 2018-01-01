@@ -1,5 +1,15 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+var currentHour = new Date().getHours();
+var currentMin = new Date().getMinutes();
+
+client.on('message', (message) => {
+
+    if(message.content == '~~test') {
+        message.channel.send(1 + ':' + 1);
+    }
+
+});
 
 client.on('ready', () => {
     console.log('I am ready!')
