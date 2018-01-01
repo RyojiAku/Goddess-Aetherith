@@ -9,7 +9,7 @@ client.on('ready', () => {
 client.on('message', function() {
     if (message.content === "$loop") { 
       var interval = setInterval (function () {
-        bot.sendMessage(message.channel, "Don't forget to vote for Clockworks Flyff! https://clockworksflyff.com/")
+        message.channel.send("Don't forget to Vote for Clockworks Flyff! https://clockworksflyff.com/")
       }, 1 * 1000); 
     }
 
