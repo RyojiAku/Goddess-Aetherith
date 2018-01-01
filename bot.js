@@ -14,7 +14,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!newbieguide') {
-    	message.reply('<a href="https://puu.sh/yRHnV/48c7ded27a.png">Follow this path</a>');
+    	message.reply('$('.my-link').html(<a href="https://puu.sh/yRHnV/48c7ded27a.png">Follow this path</a>');
   	}
 });
 
