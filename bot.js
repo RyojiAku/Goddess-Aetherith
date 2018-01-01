@@ -6,14 +6,6 @@ client.on('ready', () => {
     client.user.setPresence({ game: { name: 'Type !help', type: 0 } });
 });
 
-client.on('message', function() {
-    if (message.content === "$loop") { 
-      var interval = setInterval (function () {
-        message.channel.send("test123")
-      }, 1 * 1000); 
-    }
-});
-
 client.on('message', message => {
     if (message.content === 'Hi Goddess') {
     	message.channel.send('Hello my Child.');
