@@ -9,9 +9,10 @@ client.on('ready', () => {
 client.on('message', function() {
     if (message.content === "$loop") { 
       var interval = setInterval (function () {
-        message.channel.send("Don't forget to Vote for Clockworks Flyff! https://clockworksflyff.com/")
+        message.channel.send("test123")
       }, 1 * 1000); 
     }
+});
 
 client.on('message', message => {
     if (message.content === 'Hi Goddess') {
