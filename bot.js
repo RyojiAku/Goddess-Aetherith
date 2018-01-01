@@ -20,7 +20,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!help') {
-    	message.reply('Only one guide available: !newbieguide');
+    	message.reply('Only guides available: !newbieguide');
   	}
 });
 
