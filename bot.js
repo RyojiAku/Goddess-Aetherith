@@ -1,27 +1,16 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+var Discord = require('discord.js');
+var bot = new Discord.Client()
 
-client.on('ready', () => {
-    console.log('I am ready!')
-    client.user.setPresence({ game: { name: 'Type !help', type: 0 } });
+bot.on('ready', function() {
+    console.log(bot.user.username);
 });
 
-client.on('message', message => {
-    if (message.content === 'Hi Goddess') {
-    	message.channel.send('Hello my Child.');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === '!newbieguide') {
-    	message.reply('Follow this path: https://puu.sh/yRHnV/48c7ded27a.png');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === '!help') {
-    	message.reply('Only guides available: !newbieguide');
-  	}
+bot.on('message', function() {
+    if (message.content === "$loop") { 
+      var interval = setInterval (function () {
+        bot.sendMessage(message.channel, "123")
+      }, 1 * 1000); 
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
