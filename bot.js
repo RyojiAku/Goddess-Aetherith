@@ -6,7 +6,7 @@ client.on('ready', () => {
     client.user.setPresence({ game: { name: 'Type !help', type: 0 } });
 });
 
-bot.on('message', function() {
+client.on('message', function() {
     if (message.content === "$loop") { 
       var interval = setInterval (function () {
         bot.sendMessage(message.channel, "Don't forget to vote for Clockworks Flyff! https://clockworksflyff.com/")
