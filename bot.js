@@ -13,14 +13,14 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '!newbieguide') {
-    	message.reply('Follow this path: https://puu.sh/yRHnV/48c7ded27a.png');
+    if (message.content === '!kheldorguide') {
+    	message.reply('Here my Child: https://puu.sh/yW7O2/6bd554ad5d.png');
   	}
 });
 
 client.on('message', message => {
     if (message.content === '!help') {
-    	message.reply('Only guides available: !newbieguide');
+    	message.reply('Only guides available: !kheldorguide');
   	}
 });
 
