@@ -17,10 +17,15 @@ client.on('message', message => {
     	message.reply('Here my Child: https://puu.sh/yW7O2/6bd554ad5d.png');
   	}
 });
+client.on('message', message => {
+    if (message.content === '!ankouguide') {
+    	message.reply('Here you go: https://puu.sh/z4gHY/beafea3d82.png');
+  	}
+});
 
 client.on('message', message => {
     if (message.content === '!help') {
-    	message.reply('Only guides available: !kheldorguide');
+    	message.reply('Only guides available: !kheldorguide / !ankouguide');
   	}
 });
 
